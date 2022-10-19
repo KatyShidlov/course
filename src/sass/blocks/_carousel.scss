@@ -5,6 +5,7 @@
         position: relative;
         width: 750px;
         margin: 0 auto;
+
     }
 
     .slick-prev,
@@ -25,5 +26,36 @@
     .slick-next {
         right: -66px;
         left: auto;
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 1rem 0;
+
+        list-style-type: none;
+
+        li {
+            margin: 0 0.25rem;
+        }
+
+        button {
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            padding: 0;
+
+            border: none;
+            border-radius: 100%;
+            background-color: gray;
+
+            text-indent: -9999px;
+        }
+
+        li.slick-active button {
+            background-color: $main-color;
+        }
+
     }
 }

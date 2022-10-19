@@ -68,6 +68,15 @@
     .consultation {
         padding: 90px 10px 98px 10px;
     }
+    .carousel {
+        &__inner {
+            width: 550px;
+            img {
+                width: 100%;
+            }
+
+    }
+}
 }
 
 @media (max-width: 575px) {

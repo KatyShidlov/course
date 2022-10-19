@@ -1,5 +1,15 @@
 .catalog {
     padding-bottom: 100px;
+
+    .title {
+        text-align: center;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 45px;
+        text-transform: uppercase;
+        color: #0D0D0D;
+    }
+
     &__tabs {
         margin-top: 70px;
         list-style-type: none;
@@ -9,6 +19,7 @@
         margin-bottom: 0;
         padding-left: 0;
     }
+
     &__tab {
         width: 220px;
         height: 50px;
@@ -23,28 +34,34 @@
         margin: 0 5px;
         cursor: pointer;
         transition: 0.5s all;
+
         &:hover {
             box-shadow: 3px 3px 20px $main-color;
             border: none;
         }
+
         div {
             transform: skewX(25deg);
         }
+
         &_active {
             color: #fff;
             background-color: $main-color;
             border: none;
         }
     }
+
     &__content {
         margin-top: 60px;
         display: none;
         justify-content: space-between;
         flex-wrap: wrap;
+
         &_active {
             display: flex;
         }
     }
+
     &-item {
         width: 300px;
         min-height: 440px;
@@ -52,12 +69,14 @@
         padding: 20px 20px 26px 20px;
         overflow: hidden;
         margin-bottom: 20px;
+
         &__img {
             display: block;
             margin: 0 auto;
             max-width: 100%;
             height: 200px;
         }
+
         &__subtitle {
             margin-top: 20px;
             color: #0d0d0d;
@@ -65,6 +84,7 @@
             font-weight: 700;
             text-align: center;
         }
+
         &__descr {
             margin-top: 16px;
             color: #0d0d0d;
@@ -72,6 +92,7 @@
             font-weight: 300;
             text-align: center;
         }
+
         &__link {
             display: block;
             margin-top: 17px;
@@ -81,46 +102,55 @@
             text-decoration: underline;
             text-align: center;
             text-transform: uppercase;
+
             &:hover {
                 color: $main-color;
             }
         }
+
         hr {
             background-color: #e8e8e8;
             margin-top: 19px;
             margin-bottom: 21px;
             border-bottom: none;
         }
+
         &__footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+
         &__old-price {
             color: #555555;
             font-size: 14px;
             font-weight: 300;
             text-decoration: line-through;
         }
+
         &__price {
             color: #050505;
             font-size: 20px;
             font-weight: 700;
         }
+
         &__wrapper {
             display: flex;
             width: calc(200% + 40px);
         }
+
         &__content {
             width: 50%;
             margin-right: 0px;
             transform: translateX(-100%);
             transition: 0.5s all;
+
             &_active {
                 transform: translateX(0%);
                 margin-right: 20px;
             }
         }
+
         &__list {
             position: relative;
             width: 50%;
@@ -131,16 +161,19 @@
             padding-left: 19px;
             margin-bottom: 0;
             list-style-type: none;
+
             &_active {
                 transform: translateX(-100%);
                 margin-left: 0px;
             }
+
             li {
                 position: relative;
                 color: #555555;
                 font-size: 14px;
                 font-weight: 300;
                 margin-bottom: 20px;
+
                 &:before {
                     content: '';
                     position: absolute;
@@ -152,6 +185,7 @@
                 }
             }
         }
+
         &__back {
             position: absolute;
             bottom: 0;
@@ -163,6 +197,7 @@
             font-weight: 500;
             text-decoration: underline;
             text-transform: uppercase;
+
             &:hover {
                 color: $main-color;
             }
