@@ -26,6 +26,7 @@
   ],
   "dependencies": {
     "animate.css": "^4.1.1",
+    "gulp-htmlmin": "^5.0.1",
     "wow.js": "^1.2.2"
   }
 }
